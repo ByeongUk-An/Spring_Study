@@ -1,0 +1,9 @@
+package com.fastcampus.ch2;
+
+public class Main {
+	public static void main(String[] args) {
+		Hello hello = new Hello();
+		hello.main(); // private이라서 외부 호출 불가
+	}
+
+}
