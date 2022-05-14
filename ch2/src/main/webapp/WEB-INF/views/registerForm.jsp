@@ -72,7 +72,8 @@
 <body>
    <form action="<c:url value="/register/save"/>" method="POST" onsubmit="return formCheck(this)" >
     <div class="title">Register</div>
-    <div id="msg" class="msg">${URLDecoder.decode(param.msg,"utf-8"}</div> 
+    
+    <div id="msg" class="msg"> ${URLDecoder.decode(param.msg, "utf-8")} </div>
     <label for="">아이디</label>
     <input class="input-field" type="text" name="id" placeholder="8~12자리의 영대소문자와 숫자 조합">
     <label for="">비밀번호</label>
@@ -83,6 +84,8 @@
     <input class="input-field" type="text" name="email" placeholder="example@fastcampus.co.kr"> 
     <label for="">생일</label>
     <input class="input-field" type="text" name="birth" placeholder="2020/12/31">
+    <label for="">취미</label>
+    <input class="input-field" type="text" name="hobby" >
     <div class="sns-chk">
         <label><input type="checkbox" name="sns" value="facebook"/>페이스북</label>
         <label><input type="checkbox" name="sns" value="kakaotalk"/>카카오톡</label>
